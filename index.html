@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EE Claudia Francisco da Silva</title>
+    <meta
+      name="description"
+      content="Site institucional da EE Claudia Francisco da Silva, com calendário, localização, etapas de ensino, olimpíadas e projetos escolares."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="EE Claudia Francisco da Silva">
+        <span class="brand-mark">
+          <img src="assets/images.jpeg" alt="" />
+        </span>
+        <span>
+          <strong>EE Claudia Francisco da Silva</strong>
+          <small>Escola Estadual</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Menu principal" data-nav>
+        <a href="#calendario">Calendário</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#olimpiadas">Olimpíadas</a>
+        <a href="#gestores">Gestão</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Página inicial">
+        <div class="hero-media">
+          <img src="assets/escola-hero.png" alt="Pátio escolar iluminado durante o dia" />
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Do 5º ano ao Ensino Médio</p>
+            <h1>Claudia Francisco da Silva: escola em movimento.</h1>
+            <p>
+              A EE Claudia Francisco da Silva reúne estudantes do Ensino Fundamental II
+              e Ensino Médio em uma experiência escolar acolhedora, criativa e conectada
+              com o Jardim Nova Mercedes, em Campinas.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#calendario">Ver calendário</a>
+              <a class="button ghost" href="#localizacao">Encontrar escola</a>
+              <a
+                class="button social whatsapp"
+                href="https://wa.me/551932650917"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Abrir WhatsApp da escola"
+              >
+                <img src="assets/whatsapp.svg" alt="" />
+              </a>
+              <a
+                class="button social instagram"
+                href="https://instagram.com/eeclaudiafrancisco/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Abrir Instagram da escola"
+              >
+                <img src="assets/instagram.svg" alt="" />
+              </a>
+              <a
+                class="button social sala-futuro"
+                href="https://saladofuturo.educacao.sp.gov.br/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Abrir Sala do Futuro"
+              >
+                <img src="assets/sala-do-futuro.webp" alt="" />
+              </a>
+              <a
+                class="button social sed"
+                href="https://sed.educacao.sp.gov.br/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Abrir Secretaria Escolar Digital"
+              >
+                <img src="assets/sed.webp" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <aside class="orbit-panel" aria-label="Resumo interativo da escola">
+            <div class="orbit-ring" aria-hidden="true"></div>
+            <article class="orbit-card card-a">
+              <span>Fundamental</span>
+              <strong>5º ao 9º</strong>
+            </article>
+            <article class="orbit-card card-b">
+              <span>Ensino Médio</span>
+              <strong>1ª a 3ª</strong>
+            </article>
+            <article class="orbit-card card-c">
+              <span>CIE</span>
+              <strong>436012</strong>
+            </article>
+            <div class="center-badge">
+              <img src="assets/images.jpeg" alt="Logo da EE Claudia Francisco da Silva" />
+              <span>CIE 436012</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="home-dock" aria-label="Informações principais">
+          <a href="#calendario">
+            <span>Hoje</span>
+            <strong data-today>Calendário</strong>
+          </a>
+          <a href="#localizacao">
+            <span>Localização</span>
+            <strong>Jardim Nova Mercedes</strong>
+          </a>
+          <a href="#olimpiadas">
+            <span>Olimpíadas</span>
+            <strong>Conhecimento em disputa</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="section calendar-section" id="calendario">
+        <div class="section-heading">
+          <p class="eyebrow">Agenda escolar</p>
+          <h2>Agenda oficial em destaque</h2>
+          <p>Datas importantes da rotina escolar aparecem em um calendário interativo e em uma lista de próximos eventos.</p>
+        </div>
+
+        <div class="calendar-layout">
+          <div class="calendar-shell">
+            <div class="calendar-top">
+              <button class="icon-button" type="button" aria-label="Mês anterior" data-prev-month>‹</button>
+              <div>
+                <strong data-calendar-month>Junho 2026</strong>
+                <span data-calendar-subtitle>Agenda da escola</span>
+              </div>
+              <button class="icon-button" type="button" aria-label="Próximo mês" data-next-month>›</button>
+            </div>
+            <div class="weekdays" aria-hidden="true">
+              <span>D</span>
+              <span>S</span>
+              <span>T</span>
+              <span>Q</span>
+              <span>Q</span>
+              <span>S</span>
+              <span>S</span>
+            </div>
+            <div class="calendar-grid" data-calendar-grid aria-label="Calendário mensal"></div>
+          </div>
+
+          <div class="event-panel">
+            <div>
+              <p class="eyebrow">Próximos eventos</p>
+              <h3 data-event-title>Carregando agenda</h3>
+              <p data-event-description></p>
+            </div>
+            <ul class="event-list" data-event-list></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="localizacao">
+        <div class="section-heading">
+          <p class="eyebrow">Localização</p>
+          <h2>Onde a escola acontece</h2>
+          <p>Informações oficiais da escola, diretoria de ensino e canais de atendimento.</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-art" aria-label="Mapa visual da escola">
+            <div class="map-route route-a"></div>
+            <div class="map-route route-b"></div>
+            <div class="map-route route-c"></div>
+            <div class="map-block block-a"></div>
+            <div class="map-block block-b"></div>
+            <div class="map-block block-c"></div>
+            <div class="map-pin">
+              <span></span>
+              <strong>EE Claudia Francisco da Silva</strong>
+            </div>
+          </div>
+
+          <div class="address-panel">
+            <span class="status-pill">CIE 436012</span>
+            <h3>EE Claudia Francisco da Silva</h3>
+            <p>
+              Rua Antonio Carlos Folegatti, SN, Jardim Nova Mercedes,
+              Campinas - SP, CEP 13052-506.
+            </p>
+            <dl>
+              <div>
+                <dt>Diretoria de Ensino</dt>
+                <dd>Campinas Oeste</dd>
+              </div>
+              <div>
+                <dt>Telefone</dt>
+                <dd><a href="tel:+551932650917">(19) 3265-0917</a></dd>
+              </div>
+              <div>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:E436012A@EDUCACAO.SP.GOV.BR">E436012A@EDUCACAO.SP.GOV.BR</a></dd>
+              </div>
+            </dl>
+            <a
+              class="button map-button"
+              href="https://www.google.com/maps/search/?api=1&query=Rua%20Antonio%20Carlos%20Folegatti%20SN%20Jardim%20Nova%20Mercedes%20Campinas%20SP%2013052-506"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Abrir no Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section managers-section" id="gestores">
+        <div class="section-heading">
+          <p class="eyebrow">Gestão escolar</p>
+          <h2>Equipe gestora</h2>
+          <p>Informações do cadastro oficial da escola.</p>
+        </div>
+
+        <div class="manager-grid">
+          <article>
+            <span>Diretor</span>
+            <strong>Ronaldo Alexandre de Araujo</strong>
+          </article>
+          <article>
+            <span>Vice-Diretora</span>
+            <strong>Regina Celia Pandolfi Senatore</strong>
+          </article>
+          <article>
+            <span>Vice-Diretora</span>
+            <strong>Sheila Roberta Leal</strong>
+          </article>
+          <article>
+            <span>Coordenadora</span>
+            <strong>Carolina Costa de Oliveira</strong>
+          </article>
+          <article>
+            <span>Coordenadora</span>
+            <strong>Daniela Santos de Oliveira</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section identity-section" id="escola">
+        <div class="split">
+          <div class="section-heading">
+            <p class="eyebrow">Nossa identidade</p>
+            <h2>Presença, cuidado e futuro no mesmo lugar</h2>
+          </div>
+          <p>
+            A escola acompanha etapas decisivas da vida dos estudantes, fortalecendo
+            autonomia, convivência, leitura de mundo e preparação para novas escolhas.
+          </p>
+        </div>
+        <div class="values">
+          <span>CIE 436012</span>
+          <span>Campinas Oeste</span>
+          <span>Jardim Nova Mercedes</span>
+          <span>Fundamental e Médio</span>
+        </div>
+      </section>
+
+      <section class="section olympiads" id="olimpiadas">
+        <div class="section-heading">
+          <p class="eyebrow">Olimpíadas</p>
+          <h2>Calendário de olimpíadas com apoio da escola</h2>
+          <p>
+            Prazos, séries participantes, categorias e formas de inscrição para a
+            equipe escolar organizar a participação dos estudantes.
+          </p>
+        </div>
+
+        <div class="olympiad-highlights">
+          <article>
+            <span>30/06/2026</span>
+            <strong>OBSMA Fiocruz</strong>
+            <p>Saúde e Meio Ambiente para Fundamental II, Ensino Médio, EJA e técnico concomitante.</p>
+          </article>
+          <article>
+            <span>10/07/2026</span>
+            <strong>Redação — Letrus</strong>
+            <p>Leitura, reflexão e produção textual para anos finais e Ensino Médio.</p>
+          </article>
+          <article>
+            <span>10/08/2026</span>
+            <strong>ONC</strong>
+            <p>Ciências com participação do Ensino Fundamental e Ensino Médio.</p>
+          </article>
+        </div>
+
+        <div class="olympiad-table-wrap" role="region" aria-label="Tabela de olimpíadas" tabindex="0">
+          <table class="olympiad-table">
+            <thead>
+              <tr>
+                <th>Olimpíada</th>
+                <th>Prazo</th>
+                <th>Séries participantes</th>
+                <th>Níveis / categorias</th>
+                <th>Como participar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>OBSMA Fiocruz</strong><span>Olimpíada Brasileira de Saúde e Meio Ambiente</span></td>
+                <td>30/06/2026</td>
+                <td>Ensino Fundamental II, Ensino Médio, EJA e técnico concomitante.</td>
+                <td>Produção audiovisual, produção de texto e projeto de ciências.</td>
+                <td>O professor responsável cadastra o projeto/trabalho da equipe no sistema da OBSMA.</td>
+              </tr>
+              <tr>
+                <td><strong>Redação — Letrus</strong><span>Olimpíada Nacional de Redação</span></td>
+                <td>10/07/2026</td>
+                <td>Anos finais do Ensino Fundamental: 6º ao 9º ano; e Ensino Médio.</td>
+                <td>Atividade de leitura, reflexão e produção textual.</td>
+                <td>A escola/professor faz a inscrição. Depois os alunos se cadastram na plataforma Letrus.</td>
+              </tr>
+              <tr>
+                <td><strong>ONC</strong><span>Olimpíada Nacional de Ciências</span></td>
+                <td>10/08/2026</td>
+                <td>Ensino Fundamental e Ensino Médio.</td>
+                <td>Júnior: 3º, 4º e 5º ano; A: 6º e 7º; B: 8º e 9º; C: 1ª série EM; D: 2ª série EM; E: 3ª série EM e 4ª série técnico.</td>
+                <td>Inscrição no site oficial da ONC, normalmente pela escola/professor. 1ª fase de 13 a 15/08 e 2ª fase de 10 a 11/09.</td>
+              </tr>
+              <tr>
+                <td><strong>TBC</strong><span>Torneio Brasileiro de Ciências</span></td>
+                <td>26/08/2026</td>
+                <td>Do 4º ano do Fundamental até Ensino Médio; também categoria livre.</td>
+                <td>Júnior: 4º e 5º; nível 1: 6º e 7º; nível 2: 8º e 9º; nível 3: Ensino Médio e 4º técnico; livre: adultos/concluintes.</td>
+                <td>Inscrição individual pelo aluno/responsável ou pela escola. Para escola pública, inscrição em grupo é gratuita. Prova online em 02/09/2026.</td>
+              </tr>
+              <tr>
+                <td><strong>OBGP</strong><span>Olimpíada Brasileira de GeoPolítica</span></td>
+                <td>09/09/2026</td>
+                <td>Do 6º ano do Fundamental até Ensino Médio; também categoria livre.</td>
+                <td>Nível 1: 6º e 7º; nível 2: 8º e 9º; nível 3: Ensino Médio e 4º técnico; livre: adultos/concluintes.</td>
+                <td>Participação individual ou pela escola. Para escola pública, inscrição em grupo é gratuita. Prova online em 16/09/2026.</td>
+              </tr>
+              <tr>
+                <td><strong>ONE</strong><span>Olimpíada Nacional de Energia</span></td>
+                <td>13/09/2026</td>
+                <td>Anos finais do Fundamental: 6º, 7º, 8º e 9º ano; Ensino Médio; 4ª série do Ensino Técnico; EJA correspondente.</td>
+                <td>Regulamento consultado sem divisão por níveis escolares.</td>
+                <td>A escola se cadastra gratuitamente. O estudante deve ser inscrito pelo representante da escola na série/ano correto.</td>
+              </tr>
+              <tr>
+                <td><strong>ONEE</strong><span>Olimpíada Nacional de Eficiência Energética</span></td>
+                <td>15/09/2026</td>
+                <td>8º e 9º ano do Ensino Fundamental e 1º e 2º ano do Ensino Médio.</td>
+                <td>Fase de desafios gamificados e depois prova objetiva.</td>
+                <td>Inscrição gratuita no site oficial da ONEE.</td>
+              </tr>
+              <tr>
+                <td><strong>O2</strong><span>Olimpíada Brasileira do Oceano</span></td>
+                <td>Até setembro/outubro</td>
+                <td>Qualquer pessoa, com ou sem vínculo escolar; prova ajustada por idade ou nível escolar.</td>
+                <td>Prova de conhecimento individual; projeto socioambiental individual ou em grupo; produção artística, cultural e/ou tecnológica individual ou em grupo.</td>
+                <td>Inscrição na modalidade escolhida. Projeto/produção pode ser individual ou em grupo; prova de conhecimento é individual.</td>
+              </tr>
+              <tr>
+                <td><strong>OBMF</strong><span>Olimpíada Brasileira de Matemática Financeira</span></td>
+                <td>23/09/2026</td>
+                <td>Do 4º ano do Fundamental até Ensino Médio; também categoria livre.</td>
+                <td>Júnior: 4º e 5º; nível 1: 6º e 7º; nível 2: 8º e 9º; nível 3: Ensino Médio e 4º técnico; livre: adultos/concluintes.</td>
+                <td>Participação individual ou pela escola. Para escola pública, inscrição em grupo é gratuita. Prova online em 30/09/2026.</td>
+              </tr>
+              <tr>
+                <td><strong>OBLI</strong><span>Olimpíada Brasileira de Língua Inglesa</span></td>
+                <td>14/10/2026</td>
+                <td>Do 4º ano do Fundamental até Ensino Médio; também categoria livre.</td>
+                <td>Júnior: 4º e 5º; nível 1: 6º e 7º; nível 2: 8º e 9º; nível 3: Ensino Médio e 4º técnico; livre: adultos/concluintes.</td>
+                <td>Participação individual ou pela escola. Para escola pública, inscrição em grupo é gratuita. Prova online em 21/10/2026.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section projects" id="projetos">
+        <div class="section-heading">
+          <p class="eyebrow">Projetos</p>
+          <h2>Experiências que ampliam a sala de aula</h2>
+        </div>
+        <div class="project-grid">
+          <article>
+            <span class="project-icon">01</span>
+            <h3>Leitura e escrita</h3>
+            <p>Rodas de leitura, produção textual e práticas de comunicação.</p>
+          </article>
+          <article>
+            <span class="project-icon">02</span>
+            <h3>Meio ambiente</h3>
+            <p>Consciência ambiental, cuidado com os espaços e ações coletivas.</p>
+          </article>
+          <article>
+            <span class="project-icon">03</span>
+            <h3>Cultura e esporte</h3>
+            <p>Expressão, saúde, cooperação e pertencimento.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contato">
+        <div class="section-heading">
+          <p class="eyebrow">Contato</p>
+          <h2>Fale com a secretaria</h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p>
+              Use os canais oficiais da escola para atendimento, dúvidas e comunicação
+              com famílias e estudantes.
+            </p>
+            <div class="contact-cards">
+              <a href="tel:+551932650917">
+                <span>Telefone</span>
+                <strong>(19) 3265-0917</strong>
+              </a>
+              <a class="social-card" href="https://wa.me/551932650917" target="_blank" rel="noreferrer">
+                <img src="assets/whatsapp.svg" alt="" />
+                <span>WhatsApp</span>
+                <strong>Enviar mensagem</strong>
+              </a>
+              <a class="social-card" href="https://instagram.com/eeclaudiafrancisco/" target="_blank" rel="noreferrer">
+                <img src="assets/instagram.svg" alt="" />
+                <span>Instagram</span>
+                <strong>@eeclaudiafrancisco</strong>
+              </a>
+              <a class="social-card" href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" rel="noreferrer">
+                <img src="assets/sala-do-futuro.webp" alt="" />
+                <span>Sala do Futuro</span>
+                <strong>Acessar plataforma</strong>
+              </a>
+              <a class="social-card" href="https://sed.educacao.sp.gov.br/" target="_blank" rel="noreferrer">
+                <img src="assets/sed.webp" alt="" />
+                <span>SED</span>
+                <strong>Secretaria Escolar Digital</strong>
+              </a>
+              <a href="mailto:E436012A@EDUCACAO.SP.GOV.BR">
+                <span>E-mail</span>
+                <strong>E436012A@EDUCACAO.SP.GOV.BR</strong>
+              </a>
+              <div>
+                <span>Endereço</span>
+                <strong>Rua Antonio Carlos Folegatti, SN</strong>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" data-contact-form>
+            <label>
+              Nome
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
+            </label>
+            <label>
+              Mensagem
+              <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Enviar mensagem</button>
+            <p class="form-feedback" role="status" data-form-feedback></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>EE Claudia Francisco da Silva</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
